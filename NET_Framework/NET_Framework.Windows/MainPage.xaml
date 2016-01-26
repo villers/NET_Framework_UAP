@@ -6,67 +6,65 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    DataContext="{Binding Main, Source={StaticResource Locator}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <Grid x:Name="LayoutRoot">
+        <Hub x:Name="Hub" x:Uid="Hub" Header="PConfig">
+            <HubSection x:Uid="HubSection1"
+                        Header="Créer votre prore ordinateur"
+                        Width="Auto">
+                <DataTemplate>
+                    <!--ContentPanel-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
 
-        <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="10,0,10,0">
-            <TextBlock Text="PConfig" Style="{StaticResource HeaderTextBlockStyle}" />
-            <TextBlock Text="Créer votre propre ordinateur"  Style="{StaticResource BaseTextBlockStyle}" />
-        </StackPanel>
+                        <!--Button Bureau-->
+                        <Grid Grid.Row="0" Grid.Column="0" Background="#76B439" Margin="5">
+                            <Button Margin="0" Command="{Binding ButtonBureau}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
+                                <Button.Content>
+                                    <Image Source="/Assets/screen.png" />
+                                </Button.Content>
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Row="0" Grid.Column="1" Background="#76B439" Margin="5">
+                            <Button Command="{Binding ButtonBureau}" Content="Bureau" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
+                        </Grid>
 
-        <!--ContentPanel-->
-        <Grid Grid.Row="1" Margin="10,0,10,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
+                        <!--Button Gamer-->
+                        <Grid Grid.Row="1" Grid.Column="1" Background="#BB2F2F" Margin="5">
+                            <Button Command="{Binding ButtonGamer}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
+                                <Button.Content>
+                                    <Image Source="/Assets/screen.png" />
+                                </Button.Content>
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="0" Background="#BB2F2F" Margin="5">
+                            <Button Command="{Binding ButtonGamer}" Content="Gamer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
+                        </Grid>
 
-            <!--Button Bureau-->
-            <Grid Grid.Row="0" Grid.Column="0" Background="#76B439" Margin="5">
-                <Button Margin="0" Command="{Binding Button1}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
-                    <Button.Content>
-                        <Image Source="/Assets/screen.png" />
-                    </Button.Content>
-                </Button>
-            </Grid>
-            <Grid Grid.Row="0" Grid.Column="1" Background="#76B439" Margin="5">
-                <Button Command="{Binding Button1}" Content="Bureau" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
-            </Grid>
-
-            <!--Button Gamer-->
-            <Grid Grid.Row="1" Grid.Column="1" Background="#BB2F2F" Margin="5">
-                <Button Command="{Binding Button1}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
-                    <Button.Content>
-                        <Image Source="/Assets/screen.png" />
-                    </Button.Content>
-                </Button>
-            </Grid>
-            <Grid Grid.Row="1" Grid.Column="0" Background="#BB2F2F" Margin="5">
-                <Button Command="{Binding Button1}" Content="Gamer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
-            </Grid>
-
-            <!--Button Professionnel-->
-            <Grid Grid.Row="2" Grid.Column="0" Background="#41A7BD" Margin="5">
-                <Button Command="{Binding Button1}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
-                    <Button.Content>
-                        <Image Source="/Assets/screen.png" />
-                    </Button.Content>
-                </Button>
-            </Grid>
-            <Grid Grid.Row="2" Grid.Column="1" Background="#41A7BD" Margin="5">
-                <Button Command="{Binding Button1}" Content="Gamer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
-            </Grid>
-        </Grid>
+                        <!--Button Professionnel-->
+                        <Grid Grid.Row="2" Grid.Column="0" Background="#41A7BD" Margin="5">
+                            <Button Command="{Binding ButtonProfessionnel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
+                                <Button.Content>
+                                    <Image Source="/Assets/screen.png" />
+                                </Button.Content>
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="1" Background="#41A7BD" Margin="5">
+                            <Button Command="{Binding ButtonProfessionnel}" Content="Professionnel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
     </Grid>
 </Page>
