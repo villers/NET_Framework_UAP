@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="NET_Framework.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NET_Framework"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Main, Source={StaticResource Locator}}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+        <Hub x:Name="Hub" x:Uid="Hub" Header="PConfig">
+            <HubSection x:Uid="HubSection1"
+                        Header="Créer votre prore ordinateur"
+                        Width="Auto">
+                <DataTemplate>
+                    <!--ContentPanel-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <!--Button Bureau-->
+                        <Grid Grid.Row="0" Grid.Column="0" Background="#76B439" Margin="5">
+                            <Button Margin="0" Command="{Binding ButtonBureau}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
+                                <Button.Content>
+                                    <Image Source="/Assets/screen.png" />
+                                </Button.Content>
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Row="0" Grid.Column="1" Background="#76B439" Margin="5">
+                            <Button Command="{Binding ButtonBureau}" Content="Bureau" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
+                        </Grid>
+
+                        <!--Button Gamer-->
+                        <Grid Grid.Row="1" Grid.Column="1" Background="#BB2F2F" Margin="5">
+                            <Button Command="{Binding ButtonGamer}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
+                                <Button.Content>
+                                    <Image Source="/Assets/screen.png" />
+                                </Button.Content>
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.Column="0" Background="#BB2F2F" Margin="5">
+                            <Button Command="{Binding ButtonGamer}" Content="Gamer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
+                        </Grid>
+
+                        <!--Button Professionnel-->
+                        <Grid Grid.Row="2" Grid.Column="0" Background="#41A7BD" Margin="5">
+                            <Button Command="{Binding ButtonProfessionnel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
+                                <Button.Content>
+                                    <Image Source="/Assets/screen.png" />
+                                </Button.Content>
+                            </Button>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="1" Background="#41A7BD" Margin="5">
+                            <Button Command="{Binding ButtonProfessionnel}" Content="Professionnel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>
