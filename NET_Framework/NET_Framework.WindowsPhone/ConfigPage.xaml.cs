@@ -1,10 +1,13 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Views;
+using Microsoft.Practices.ServiceLocation;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +28,7 @@ namespace NET_Framework
         public ConfigPage()
         {
             this.InitializeComponent();
+            HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
         /// <summary>
@@ -34,6 +38,16 @@ namespace NET_Framework
         /// Ce paramètre est généralement utilisé pour configurer la page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+        {
+            Frame frame = Window.Current.Content as Frame;
+            if (frame.CanGoBack)
+            {
+                ServiceLocator.Current.GetInstance<INavigationService>().GoBack();
+                e.Handled = true;
+            }
         }
     }
 }
