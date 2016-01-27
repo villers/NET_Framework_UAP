@@ -55,6 +55,7 @@ namespace NET_Framework.ViewModel
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
         }
+
         public ConfigViewModel Config
         {
             get
