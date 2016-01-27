@@ -27,6 +27,7 @@ namespace NET_Framework.ViewModel
     public class ViewModelLocator
     {
         public static string ConfigPageKey = "ConfigPage";
+
         public static string MainPageKey = "MainPage";
         /// <summary>
         /// Initializes a new instance of the ViewModelLocator class.

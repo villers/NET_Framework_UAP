@@ -7,13 +7,10 @@ namespace NET_Framework.Model
 {
     public class ComponentsKey
     {
-        [JsonProperty("UniqueId")]
         public string UniqueId { get; set; }
 
-        [JsonProperty("Title")]
         public string Title { get; set; }
 
-        [JsonProperty("Image")]
         public string Image { get; set; }
     }
 }

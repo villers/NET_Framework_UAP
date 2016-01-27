@@ -11,7 +11,8 @@ namespace NET_Framework.ViewModel
 {
     public class ConfigViewModel : ViewModelBase
     {
-        public string ConfigID { get; set; } = "Gamer";
+        public string ConfigID { get; set; }
+
         public IDataSource ComputersData { get; set; }
 
         public INotifyTaskCompletion<Computer> Computers

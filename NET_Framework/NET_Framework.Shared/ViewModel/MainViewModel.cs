@@ -32,6 +32,8 @@ namespace NET_Framework.ViewModel
 
         public RelayCommand ButtonProfessionnel { get; set; }
 
+        private ConfigViewModel ConfigViewModel { get; set; }
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
@@ -43,31 +45,25 @@ namespace NET_Framework.ViewModel
             ButtonBureau = new RelayCommand(do_ButtonBureau);
             ButtonGamer = new RelayCommand(do_ButtonGamer);
             ButtonProfessionnel = new RelayCommand(do_Professionnel);
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+
+            ConfigViewModel = ServiceLocator.Current.GetInstance<ConfigViewModel>();
         }
 
         private void do_ButtonBureau()
         {
-            ServiceLocator.Current.GetInstance<ConfigViewModel>().ConfigID = "Bureau";
+            ConfigViewModel.ConfigID = "Bureau";
             this.Navigation.NavigateTo(ViewModelLocator.ConfigPageKey);
         }
 
         private void do_ButtonGamer()
         {
-            ServiceLocator.Current.GetInstance<ConfigViewModel>().ConfigID = "Gamer";
+            ConfigViewModel.ConfigID = "Gamer";
             this.Navigation.NavigateTo(ViewModelLocator.ConfigPageKey);
         }
 
         private void do_Professionnel()
         {
-            ServiceLocator.Current.GetInstance<ConfigViewModel>().ConfigID = "Professionnel";
+            ConfigViewModel.ConfigID = "Professionnel";
             this.Navigation.NavigateTo(ViewModelLocator.ConfigPageKey);
         }
     }
