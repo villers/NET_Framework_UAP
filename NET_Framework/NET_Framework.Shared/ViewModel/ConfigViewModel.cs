@@ -7,11 +7,16 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using GalaSoft.MvvmLight.Command;
 
 namespace NET_Framework.ViewModel
 {
     public class ConfigViewModel : ViewModelBase
     {
+        public RelayCommand SelectedItemListView { get; set; }
+
+        public ComponentsKey ComponentSelected { get; set; }
+
         public string ConfigID { get; set; }
 
         public ComponentType ComponentType { get; set; }
@@ -64,7 +69,13 @@ namespace NET_Framework.ViewModel
 
         public ConfigViewModel(IDataSource computersData)
         {
-            ComputersData = computersData;            
+            ComputersData = computersData;
+            SelectedItemListView = new RelayCommand(do_SelectedItemListView);
+        }
+
+        private void do_SelectedItemListView()
+        {
+            System.Diagnostics.Debug.WriteLine("You already own this feature.");
         }
     }
 }

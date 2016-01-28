@@ -26,13 +26,17 @@
             </StackPanel>
 
             <!--ContentPanel-->
-            <ListView Grid.Row="1" ItemsSource="{Binding ComponentsItems.Result}">
+            <ListView Grid.Row="1" ItemsSource="{Binding ComponentsItems.Result}" SelectedItem="{Binding Path=ComponentSelected, Mode=TwoWay}" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel>
-                            <TextBlock Text="{Binding Title}"/>
-                            <Image Source="{Binding Image}" />
-                        </StackPanel>
+                        <Button Margin="0" Command="{Binding SelectedItemListView}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
+                            <Button.Content>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Title}"/>
+                                    <Image Source="{Binding Image}" />
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
