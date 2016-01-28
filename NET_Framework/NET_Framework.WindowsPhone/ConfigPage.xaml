@@ -22,14 +22,13 @@
             <StackPanel Grid.Row="0" Margin="10,0,10,0">
                 <TextBlock Text="PConfig (filtre des composants)" Style="{StaticResource BaseTextBlockStyle}"/>
                 <TextBlock Text="{Binding ComponentTypeName}" Style="{StaticResource HeaderTextBlockStyle}" />
-                <TextBlock Text="You choose: "   />
             </StackPanel>
 
             <!--ContentPanel-->
-            <ListView Grid.Row="1" ItemsSource="{Binding ComponentsItems.Result}" SelectedItem="{Binding Path=ComponentSelected, Mode=TwoWay}" >
+            <ListView Grid.Row="1" ItemsSource="{Binding ComponentsItems.Result}" SelectedItem="{Binding ComponentSelected}" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Button Margin="0" Command="{Binding SelectedItemListView}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
+                        <Button Margin="0" Command="{Binding Config.SelectedItemListView, Source={StaticResource Locator}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
                             <Button.Content>
                                 <StackPanel>
                                     <TextBlock Text="{Binding Title}"/>

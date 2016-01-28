@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Views;
 
 namespace NET_Framework.ViewModel
 {
     public class ConfigViewModel : ViewModelBase
     {
+        private INavigationService Navigation { get; set; }
+
         public RelayCommand SelectedItemListView { get; set; }
 
         public ComponentsKey ComponentSelected { get; set; }
@@ -67,15 +70,47 @@ namespace NET_Framework.ViewModel
             get { return NotifyTaskCompletion.Create(ComputersData.GetComputerComponents(ConfigID, ComponentType)); }
         }
 
-        public ConfigViewModel(IDataSource computersData)
+        public ConfigViewModel(IDataSource computersData, INavigationService navigation)
         {
+            Navigation = navigation;
             ComputersData = computersData;
             SelectedItemListView = new RelayCommand(do_SelectedItemListView);
         }
 
         private void do_SelectedItemListView()
         {
-            System.Diagnostics.Debug.WriteLine("You already own this feature.");
+            if (ComponentType.Storage.Equals(ComponentType))
+            {
+                Navigation.NavigateTo(ViewModelLocator.ConfigPageKey);
+                return;
+            }
+
+            switch (ComponentType)
+            {
+                case ComponentType.Graphic:
+                    {
+                        ComponentType = ComponentType.Cpu;
+                        break;
+                    }
+
+                case ComponentType.Cpu:
+                    {
+                        ComponentType = ComponentType.Memory;
+                        break;
+                    }
+
+                case ComponentType.Memory:
+                    {
+                        ComponentType = ComponentType.Storage;
+                        break;
+                    }
+
+                default:
+                    {
+                        throw new Exception("ComponentType undefined");
+                    }
+            }
+            Navigation.NavigateTo(ViewModelLocator.ConfigPageKey);
         }
     }
 }

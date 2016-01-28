@@ -9,63 +9,37 @@
     DataContext="{Binding Config, Source={StaticResource Locator}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="{Binding Computers.Result.Title}"></TextBlock>
-        <Hub x:Name="Hub" x:Uid="Hub" Header="PConfig">
-            <HubSection x:Uid="HubSection1"
-                        Header="Créer votre prore ordinateur"
-                        Width="Auto">
-                <DataTemplate>
-                    <!--ContentPanel-->
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
+    <ScrollViewer>
+        <Grid>
 
-                        <!--Button Bureau-->
-                        <Grid Grid.Row="0" Grid.Column="0" Background="#76B439" Margin="5">
-                            <Button Margin="0" Command="{Binding ButtonBureau}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
-                                <Button.Content>
-                                    <Image Source="/Assets/screen.png" />
-                                </Button.Content>
-                            </Button>
-                        </Grid>
-                        <Grid Grid.Row="0" Grid.Column="1" Background="#76B439" Margin="5">
-                            <Button Command="{Binding ButtonBureau}" Content="Bureau" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
-                        </Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-                        <!--Button Gamer-->
-                        <Grid Grid.Row="1" Grid.Column="1" Background="#BB2F2F" Margin="5">
-                            <Button Command="{Binding ButtonGamer}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
-                                <Button.Content>
-                                    <Image Source="/Assets/screen.png" />
-                                </Button.Content>
-                            </Button>
-                        </Grid>
-                        <Grid Grid.Row="1" Grid.Column="0" Background="#BB2F2F" Margin="5">
-                            <Button Command="{Binding ButtonGamer}" Content="Gamer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
-                        </Grid>
+            <!-- {Binding Computers.Result.Components[0].Graphic}-->
+            <!--TitlePanel contains the name of the application and page title-->
+            <StackPanel Grid.Row="0" Margin="10,0,10,0">
+                <TextBlock Text="PConfig (filtre des composants)" Style="{StaticResource BaseTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentTypeName}" Style="{StaticResource HeaderTextBlockStyle}" />
+            </StackPanel>
 
-                        <!--Button Professionnel-->
-                        <Grid Grid.Row="2" Grid.Column="0" Background="#41A7BD" Margin="5">
-                            <Button Command="{Binding ButtonProfessionnel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
-                                <Button.Content>
-                                    <Image Source="/Assets/screen.png" />
-                                </Button.Content>
-                            </Button>
-                        </Grid>
-                        <Grid Grid.Row="2" Grid.Column="1" Background="#41A7BD" Margin="5">
-                            <Button Command="{Binding ButtonProfessionnel}" Content="Professionnel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0" />
-                        </Grid>
-                    </Grid>
-                </DataTemplate>
-            </HubSection>
-        </Hub>
-    </Grid>
+            <!--ContentPanel-->
+            <ListView Grid.Row="1" ItemsSource="{Binding ComponentsItems.Result}" SelectedItem="{Binding ComponentSelected}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Button Margin="0" Command="{Binding Config.SelectedItemListView, Source={StaticResource Locator}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
+                            <Button.Content>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Title}"/>
+                                    <Image Source="{Binding Image}" />
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </Grid>
+    </ScrollViewer>
 </Page>
