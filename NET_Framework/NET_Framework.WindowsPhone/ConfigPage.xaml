@@ -9,7 +9,34 @@
     DataContext="{Binding Config, Source={StaticResource Locator}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="{Binding Computers.Result.Title}"></TextBlock>
-    </Grid>
+    <ScrollViewer>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- {Binding Computers.Result.Components[0].Graphic}-->
+            <!--TitlePanel contains the name of the application and page title-->
+            <StackPanel Grid.Row="0" Margin="10,0,10,0">
+                <TextBlock Text="PConfig (filtre des composants)" Style="{StaticResource BaseTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentTypeName}" Style="{StaticResource HeaderTextBlockStyle}" />
+                <TextBlock Text="You choose: "   />
+            </StackPanel>
+
+            <!--ContentPanel-->
+            <ListView Grid.Row="1" ItemsSource="{Binding ComponentsItems.Result}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Title}"/>
+                            <Image Source="{Binding Image}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </Grid>
+    </ScrollViewer>
 </Page>

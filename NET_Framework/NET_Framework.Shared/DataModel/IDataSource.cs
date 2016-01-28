@@ -8,6 +8,10 @@ namespace NET_Framework.DataModel
 {
     public interface IDataSource
     {
-        Task<Computer> GetComputers(string uniqueID);
+        Task<IEnumerable<Computer>> GetComputers();
+
+        Task<Computer> GetComputer(string uniqueID);
+
+        Task<IEnumerable<ComponentsKey>> GetComputerComponents(string configID, ComponentType componentType);
     }
 }

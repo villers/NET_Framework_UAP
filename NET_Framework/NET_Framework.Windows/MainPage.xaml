@@ -12,7 +12,7 @@
     <Grid x:Name="LayoutRoot">
         <Hub x:Name="Hub" x:Uid="Hub" Header="PConfig">
             <HubSection x:Uid="HubSection1"
-                        Header="Créer votre prore ordinateur"
+                        Header="Créer votre propre ordinateur"
                         Width="Auto">
                 <DataTemplate>
                     <!--ContentPanel-->

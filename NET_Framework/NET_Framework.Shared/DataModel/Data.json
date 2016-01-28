@@ -1,170 +1,164 @@
 ﻿[
-  {
-    "UniqueId":"Bureau",
-    "Title":"Bureau",
-    "Components":[
-      {
-        "Graphic":[
-          {
-            "UniqueId":"GraphicCard1",
-            "Title":"Nvidia GTX 760 2go",
-            "Image":"Assets/GraphicCard1.png"
-          },
-          {
-            "UniqueId":"GraphicCard2",
-            "Title":"AMD R7 250 2go",
-            "Image":"Assets/GraphicCard2.png"
-          }
-        ],
-        "Cpu":[
-          {
-            "UniqueId":"Cpu1",
-            "Title":"Intel i3 2300",
-            "Image":"Assets/Cpu1.png"
-          },
-          {
-            "UniqueId":"Cpu2",
-            "Title":"Intel i5 4570",
-            "Image":"Assets/Cpu2.png"
-          }
-        ],
-        "Memory":[
-          {
-            "UniqueId":"Memory1",
-            "Title":"Crucial Ballistix 2*4go 1333mhz",
-            "Image":"Assets/Memory1.png"
-          },
-          {
-            "UniqueId":"Memory2",
-            "Title":"Corsair Dominator 2*4go 1333mhz",
-            "Image":"Assets/Memory2.png"
-          }
-        ],
-        "Storage":[
-          {
-            "UniqueId":"Storage1",
-            "Title":"SSD Kingstone v300 128go",
-            "Image":"Assets/storage1.png"
-          },
-          {
-            "UniqueId":"Storage2",
-            "Title":"Western Digital Caviar Blue 500go 7200tr/min",
-            "Image":"Assets/Memory2.png"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "UniqueId":"Gamer",
-    "Title":"Gamer",
-    "Components":[
-      {
-        "Graphic":[
-          {
-            "UniqueId":"GraphicCard1",
-            "Title":"Nvidia GTX 970 2go",
-            "Image":"Assets/GraphicCard1.png"
-          },
-          {
-            "UniqueId":"GraphicCard2",
-            "Title":"AMD R9 290x 2go",
-            "Image":"Assets/GraphicCard2.png"
-          }
-        ],
-        "Cpu":[
-          {
-            "UniqueId":"Cpu1",
-            "Title":"Intel i5 4690k",
-            "Image":"Assets/Cpu1.png"
-          },
-          {
-            "UniqueId":"Cpu2",
-            "Title":"Intel i7 4790k",
-            "Image":"Assets/Cpu2.png"
-          }
-        ],
-        "Memory":[
-          {
-            "UniqueId":"Memory1",
-            "Title":"Crucial Ballistix 2*8go 1800mhz",
-            "Image":"Assets/Memory1.png"
-          },
-          {
-            "UniqueId":"Memory2",
-            "Title":"Corsair Dominator 2*8go 1800mhz",
-            "Image":"Assets/Memory2.png"
-          }
-        ],
-        "Storage":[
-          {
-            "UniqueId":"Storage1",
-            "Title":"SSD Samung 85O EVO 120go",
-            "Image":"Assets/storage1.png"
-          },
-          {
-            "UniqueId":"Storage2",
-            "Title":"SSD Kingstone HyperX 120go",
-            "Image":"Assets/Memory2.png"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "UniqueId":"Professionnel",
-    "Title":"Professionnel",
-    "Components":[
-      {
-        "Graphic":[
-          {
-            "UniqueId":"GraphicCard1",
-            "Title":"Nvidia Geforce Quadro ZFX",
-            "Image":"Assets/GraphicCard1.png"
-          },
-          {
-            "UniqueId":"GraphicCard2",
-            "Title":"AMD EyeShadow Twilight",
-            "Image":"Assets/GraphicCard2.png"
-          }
-        ],
-        "Cpu":[
-          {
-            "UniqueId":"Cpu1",
-            "Title":"Intel i7 4770x",
-            "Image":"Assets/Cpu1.png"
-          },
-          {
-            "UniqueId":"Cpu2",
-            "Title":"Intel i7 4790x",
-            "Image":"Assets/Cpu2.png"
-          }
-        ],
-        "Memory":[
-          {
-            "UniqueId":"Memory1",
-            "Title":"Crucial Ballistix 4*8go 1666mhz",
-            "Image":"Assets/Memory1.png"
-          },
-          {
-            "UniqueId":"Memory2",
-            "Title":"Corsair Dominator 4*8go 1866mhz",
-            "Image":"Assets/Memory2.png"
-          }
-        ],
-        "Storage":[
-          {
-            "UniqueId":"Storage1",
-            "Title":"SSD Kingstone v300 128go",
-            "Image":"Assets/storage1.png"
-          },
-          {
-            "UniqueId":"Storage2",
-            "Title":"Western Digital Caviar Blue 500go 7200tr/min",
-            "Image":"Assets/Memory2.png"
-          }
-        ]
-      }
-    ]
-  }
+    {
+        "UniqueId": "Bureau",
+        "Title": "Bureau",
+        "Components": {
+            "Graphic": [
+                {
+                    "UniqueId": "GraphicCard1",
+                    "Title": "Nvidia GTX 760 2go",
+                    "Image": "Assets/GraphicCard1.png"
+                },
+                {
+                    "UniqueId": "GraphicCard2",
+                    "Title": "AMD R7 250 2go",
+                    "Image": "Assets/GraphicCard2.png"
+                }
+            ],
+            "Cpu": [
+                {
+                    "UniqueId": "Cpu1",
+                    "Title": "Intel i3 2300",
+                    "Image": "Assets/Cpu1.png"
+                },
+                {
+                    "UniqueId": "Cpu2",
+                    "Title": "Intel i5 4570",
+                    "Image": "Assets/Cpu2.png"
+                }
+            ],
+            "Memory": [
+                {
+                    "UniqueId": "Memory1",
+                    "Title": "Crucial Ballistix 2*4go 1333mhz",
+                    "Image": "Assets/Memory1.png"
+                },
+                {
+                    "UniqueId": "Memory2",
+                    "Title": "Corsair Dominator 2*4go 1333mhz",
+                    "Image": "Assets/Memory2.png"
+                }
+            ],
+            "Storage": [
+                {
+                    "UniqueId": "Storage1",
+                    "Title": "SSD Kingstone v300 128go",
+                    "Image": "Assets/storage1.png"
+                },
+                {
+                    "UniqueId": "Storage2",
+                    "Title": "Western Digital Caviar Blue 500go 7200tr/min",
+                    "Image": "Assets/Memory2.png"
+                }
+            ]
+        }
+    },
+    {
+        "UniqueId": "Gamer",
+        "Title": "Gamer",
+        "Components": {
+            "Graphic": [
+                {
+                    "UniqueId": "GraphicCard1",
+                    "Title": "Nvidia GTX 970 2go",
+                    "Image": "Assets/GraphicCard1.png"
+                },
+                {
+                    "UniqueId": "GraphicCard2",
+                    "Title": "AMD R9 290x 2go",
+                    "Image": "Assets/GraphicCard2.png"
+                }
+            ],
+            "Cpu": [
+                {
+                    "UniqueId": "Cpu1",
+                    "Title": "Intel i5 4690k",
+                    "Image": "Assets/Cpu1.png"
+                },
+                {
+                    "UniqueId": "Cpu2",
+                    "Title": "Intel i7 4790k",
+                    "Image": "Assets/Cpu2.png"
+                }
+            ],
+            "Memory": [
+                {
+                    "UniqueId": "Memory1",
+                    "Title": "Crucial Ballistix 2*8go 1800mhz",
+                    "Image": "Assets/Memory1.png"
+                },
+                {
+                    "UniqueId": "Memory2",
+                    "Title": "Corsair Dominator 2*8go 1800mhz",
+                    "Image": "Assets/Memory2.png"
+                }
+            ],
+            "Storage": [
+                {
+                    "UniqueId": "Storage1",
+                    "Title": "SSD Samung 85O EVO 120go",
+                    "Image": "Assets/storage1.png"
+                },
+                {
+                    "UniqueId": "Storage2",
+                    "Title": "SSD Kingstone HyperX 120go",
+                    "Image": "Assets/Memory2.png"
+                }
+            ]
+        }
+    },
+    {
+        "UniqueId": "Professionnel",
+        "Title": "Professionnel",
+        "Components": {
+            "Graphic": [
+                {
+                    "UniqueId": "GraphicCard1",
+                    "Title": "Nvidia Geforce Quadro ZFX",
+                    "Image": "Assets/GraphicCard1.png"
+                },
+                {
+                    "UniqueId": "GraphicCard2",
+                    "Title": "AMD EyeShadow Twilight",
+                    "Image": "Assets/GraphicCard2.png"
+                }
+            ],
+            "Cpu": [
+                {
+                    "UniqueId": "Cpu1",
+                    "Title": "Intel i7 4770x",
+                    "Image": "Assets/Cpu1.png"
+                },
+                {
+                    "UniqueId": "Cpu2",
+                    "Title": "Intel i7 4790x",
+                    "Image": "Assets/Cpu2.png"
+                }
+            ],
+            "Memory": [
+                {
+                    "UniqueId": "Memory1",
+                    "Title": "Crucial Ballistix 4*8go 1666mhz",
+                    "Image": "Assets/Memory1.png"
+                },
+                {
+                    "UniqueId": "Memory2",
+                    "Title": "Corsair Dominator 4*8go 1866mhz",
+                    "Image": "Assets/Memory2.png"
+                }
+            ],
+            "Storage": [
+                {
+                    "UniqueId": "Storage1",
+                    "Title": "SSD Kingstone v300 128go",
+                    "Image": "Assets/storage1.png"
+                },
+                {
+                    "UniqueId": "Storage2",
+                    "Title": "Western Digital Caviar Blue 500go 7200tr/min",
+                    "Image": "Assets/Memory2.png"
+                }
+            ]
+        }
+    }
 ]

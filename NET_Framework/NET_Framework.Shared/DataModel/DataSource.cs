@@ -16,7 +16,7 @@ namespace NET_Framework.DataModel
     {
         private IEnumerable<Computer> computers { get; set; } = null;
 
-        public async Task<Computer> GetComputers(string UnitID)
+        private async Task getJson()
         {
             if (computers == null)
             {
@@ -24,7 +24,50 @@ namespace NET_Framework.DataModel
                 string Text = await FileIO.ReadTextAsync(file);
                 computers = JsonConvert.DeserializeObject<List<Computer>>(Text);
             }
+        }
+
+        public async Task<IEnumerable<Computer>> GetComputers()
+        {
+            await getJson();
+            return computers;
+        }
+
+        public async Task<Computer> GetComputer(string UnitID)
+        {
+            await getJson();
             return computers.Where(x => x.UniqueId == UnitID).FirstOrDefault();
+        }
+
+        public async Task<IEnumerable<ComponentsKey>> GetComputerComponents(string UnitID, ComponentType componentType)
+        {
+            await getJson();
+            switch (componentType)
+            {
+                case ComponentType.Graphic:
+                    {
+                        return computers.Where(x => x.UniqueId == UnitID).FirstOrDefault().Components.Graphic;
+                    }
+
+                case ComponentType.Cpu:
+                    {
+                        return computers.Where(x => x.UniqueId == UnitID).FirstOrDefault().Components.Cpu;
+                    }
+
+                case ComponentType.Memory:
+                    {
+                        return computers.Where(x => x.UniqueId == UnitID).FirstOrDefault().Components.Memory;
+                    }
+
+                case ComponentType.Storage:
+                    {
+                        return computers.Where(x => x.UniqueId == UnitID).FirstOrDefault().Components.Storage;
+                    }
+
+                default:
+                    {
+                        throw new Exception("ComponentType undefined");
+                    }
+            }
         }
     }
 }

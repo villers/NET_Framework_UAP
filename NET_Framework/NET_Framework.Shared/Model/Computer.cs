@@ -12,7 +12,7 @@ namespace NET_Framework.Model
 
         public string Title { get; set; }
 
-        public Component[] Components { get; set; }
+        public Component Components { get; set; }
     }
 
 }

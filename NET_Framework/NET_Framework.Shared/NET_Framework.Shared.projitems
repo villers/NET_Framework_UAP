@@ -18,6 +18,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\IDataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Component.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ComponentType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ComponentsKey.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Computer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ConfigViewModel.cs" />

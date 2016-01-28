@@ -40,18 +40,21 @@ namespace NET_Framework.ViewModel
         private void do_ButtonBureau()
         {
             ConfigViewModel.ConfigID = "Bureau";
+            ConfigViewModel.ComponentType = ComponentType.Graphic;
             this.Navigation.NavigateTo(ViewModelLocator.ConfigPageKey);
         }
 
         private void do_ButtonGamer()
         {
             ConfigViewModel.ConfigID = "Gamer";
+            ConfigViewModel.ComponentType = ComponentType.Graphic;
             this.Navigation.NavigateTo(ViewModelLocator.ConfigPageKey);
         }
 
         private void do_Professionnel()
         {
             ConfigViewModel.ConfigID = "Professionnel";
+            ConfigViewModel.ComponentType = ComponentType.Graphic;
             this.Navigation.NavigateTo(ViewModelLocator.ConfigPageKey);
         }
     }
