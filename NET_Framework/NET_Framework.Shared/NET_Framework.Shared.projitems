@@ -22,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\ComponentType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ComponentsKey.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Computer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\CardViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ConfigViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />

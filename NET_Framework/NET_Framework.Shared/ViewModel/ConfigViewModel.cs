@@ -16,9 +16,11 @@ namespace NET_Framework.ViewModel
     {
         private INavigationService Navigation { get; set; }
 
+        public ComponentSelected ComponentSelected { get; set; }
+
         public RelayCommand SelectedItemListView { get; set; }
 
-        public ComponentsKey ComponentSelected { get; set; }
+        public ComponentsKey ComponentsKey { get; set; }
 
         public string ConfigID { get; set; }
 
@@ -75,34 +77,39 @@ namespace NET_Framework.ViewModel
             Navigation = navigation;
             ComputersData = computersData;
             SelectedItemListView = new RelayCommand(do_SelectedItemListView);
+            ComponentSelected = new ComponentSelected();
         }
 
         private void do_SelectedItemListView()
         {
-            if (ComponentType.Storage.Equals(ComponentType))
-            {
-                Navigation.NavigateTo(ViewModelLocator.ConfigPageKey);
-                return;
-            }
-
             switch (ComponentType)
             {
                 case ComponentType.Graphic:
                     {
+                        ComponentSelected.Graphic = ComponentsKey;
                         ComponentType = ComponentType.Cpu;
                         break;
                     }
 
                 case ComponentType.Cpu:
                     {
+                        ComponentSelected.Cpu = ComponentsKey;
                         ComponentType = ComponentType.Memory;
                         break;
                     }
 
                 case ComponentType.Memory:
                     {
+                        ComponentSelected.Memory = ComponentsKey;
                         ComponentType = ComponentType.Storage;
                         break;
+                    }
+
+                case ComponentType.Storage:
+                    {
+                        ComponentSelected.Storage = ComponentsKey;
+                        Navigation.NavigateTo(ViewModelLocator.CardPageKey);
+                        return;
                     }
 
                 default:

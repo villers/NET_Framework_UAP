@@ -25,7 +25,7 @@
             </StackPanel>
 
             <!--ContentPanel-->
-            <ListView Grid.Row="1" ItemsSource="{Binding ComponentsItems.Result}" SelectedItem="{Binding ComponentSelected}" >
+            <ListView Grid.Row="1" IsItemClickEnabled="True" ItemsSource="{Binding ComponentsItems.Result}" SelectedItem="{Binding ComponentsKey, Mode=TwoWay}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Button Margin="0" Command="{Binding Config.SelectedItemListView, Source={StaticResource Locator}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">

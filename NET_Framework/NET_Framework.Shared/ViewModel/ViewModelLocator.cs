@@ -29,6 +29,9 @@ namespace NET_Framework.ViewModel
         public static string ConfigPageKey = "ConfigPage";
 
         public static string MainPageKey = "MainPage";
+
+        public static string CardPageKey = "CardPage";
+
         /// <summary>
         /// Initializes a new instance of the ViewModelLocator class.
         /// </summary>
@@ -39,6 +42,7 @@ namespace NET_Framework.ViewModel
             NavigationService nav = new NavigationService();
             nav.Configure(ConfigPageKey, typeof(ConfigPage));
             nav.Configure(MainPageKey, typeof(MainPage));
+            nav.Configure(CardPageKey, typeof(CardPage));
             SimpleIoc.Default.Register<INavigationService>(() => nav);
 
             SimpleIoc.Default.Register<IDialogService, DialogService>();
@@ -46,6 +50,7 @@ namespace NET_Framework.ViewModel
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<ConfigViewModel>();
+            SimpleIoc.Default.Register<CardViewModel>();
         }
 
         public MainViewModel Main
@@ -61,6 +66,14 @@ namespace NET_Framework.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<ConfigViewModel>();
+            }
+        }
+
+        public CardViewModel Card
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<CardViewModel>();
             }
         }
 
