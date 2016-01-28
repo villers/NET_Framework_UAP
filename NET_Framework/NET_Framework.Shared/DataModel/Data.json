@@ -43,12 +43,12 @@
                 {
                     "UniqueId": "Storage1",
                     "Title": "SSD Kingstone v300 128go",
-                    "Image": "Assets/storage1.png"
+                    "Image": "Assets/Storage1.png"
                 },
                 {
                     "UniqueId": "Storage2",
                     "Title": "Western Digital Caviar Blue 500go 7200tr/min",
-                    "Image": "Assets/Memory2.png"
+                    "Image": "Assets/Storage2.png"
                 }
             ]
         }
@@ -97,12 +97,12 @@
                 {
                     "UniqueId": "Storage1",
                     "Title": "SSD Samung 85O EVO 120go",
-                    "Image": "Assets/storage1.png"
+                    "Image": "Assets/Storage1.png"
                 },
                 {
                     "UniqueId": "Storage2",
                     "Title": "SSD Kingstone HyperX 120go",
-                    "Image": "Assets/Memory2.png"
+                    "Image": "Assets/Storage2.png"
                 }
             ]
         }
@@ -151,12 +151,12 @@
                 {
                     "UniqueId": "Storage1",
                     "Title": "SSD Kingstone v300 128go",
-                    "Image": "Assets/storage1.png"
+                    "Image": "Assets/Storage1.png"
                 },
                 {
                     "UniqueId": "Storage2",
                     "Title": "Western Digital Caviar Blue 500go 7200tr/min",
-                    "Image": "Assets/Memory2.png"
+                    "Image": "Assets/Storage2.png"
                 }
             ]
         }

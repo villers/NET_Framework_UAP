@@ -26,6 +26,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Cpu1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Cpu2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\GraphicCard1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\GraphicCard2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Memory1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Memory2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\storage1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\storage2.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\screen.png" />
     <Content Include="$(MSBuildThisFileDirectory)DataModel\Data.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
