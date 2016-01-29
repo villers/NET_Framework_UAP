@@ -8,13 +8,13 @@
                     "UniqueId": "GraphicCard1",
                     "Title": "XFX Radeon R7 360 R7-360T-2SF5-singlefan 2go",
                     "Price": "109.96",
-                    "Image": "Assets/image/GraphicCard1.png"
+                    "Image": "Assets/image/Bureau/GraphicCard1.png"
                 },
                 {
                     "UniqueId": "GraphicCard2",
                     "Title": "Gainward GeForce GT610 1go",
                     "Price":  "44.95",
-                    "Image": "Assets/image/GraphicCard2.png"
+                    "Image": "Assets/image/Bureau/GraphicCard2.png"
                 }
             ],
             "Cpu": [
@@ -22,13 +22,13 @@
                     "UniqueId": "Cpu1",
                     "Title": "AMD Athlon 5150 4x1.6ghz",
                     "Price": "40.00",
-                    "Image": "Assets/image/Cpu1.png"
+                    "Image": "Assets/image/Bureau/Cpu1.png"
                 },
                 {
                     "UniqueId": "Cpu2",
                     "Title": "Intel pentium G3240 2x3.1ghz",
                     "Price": "59.75",
-                    "Image": "Assets/image/Cpu2.png"
+                    "Image": "Assets/image/Bureau/Cpu2.png"
                 }
             ],
             "Memory": [
@@ -36,13 +36,13 @@
                     "UniqueId": "Memory1",
                     "Title": "GSkill Aegis Series 8go DDR3 1600mhz cas 11",
                     "Price": "43.65",
-                    "Image": "Assets/image/Memory1.png"
+                    "Image": "Assets/image/Bureau/Memory1.png"
                 },
                 {
                     "UniqueId": "Memory2",
                     "Title": "Crucial DDR3 4go 1600mhz cas 11",
                     "Price": "23.75",
-                    "Image": "Assets/image/Memory2.png"
+                    "Image": "Assets/image/Bureau/Memory2.png"
                 }
             ],
             "Storage": [
@@ -50,13 +50,13 @@
                     "UniqueId": "Storage1",
                     "Title": "Seagate Deskstop SSHD 1to",
                     "Price":  "79.90",
-                    "Image": "Assets/image/Storage1.png"
+                    "Image": "Assets/image/Bureau/Storage1.png"
                 },
                 {
                     "UniqueId": "Storage2",
                     "Title": "Hitachi TravelStar Z5k500 500go 7mm",
                     "Price": "44.90",
-                    "Image": "Assets/image/Storage2.png"
+                    "Image": "Assets/image/Bureau/Storage2.png"
                 }
             ]
         }
@@ -70,13 +70,13 @@
                     "UniqueId": "GraphicCard1",
                     "Title": "MSI GeFroce GTX 980Ti Gaming 6g Golden Edition",
                     "Price": "899.95", 
-                    "Image": "Assets/image/GraphicCard1.png"
+                    "Image": "Assets/image/Gamer/GraphicCard1.png"
                 },
                 {
                     "UniqueId": "GraphicCard2",
                     "Title": "Gigabyte Radeon R9 Fury X GV-R9FURYX-4GD-B",
                     "Price": "759.95",
-                    "Image": "Assets/image/GraphicCard2.png"
+                    "Image": "Assets/image/Gamer/GraphicCard2.png"
                 }
             ],
             "Cpu": [
@@ -84,13 +84,13 @@
                     "UniqueId": "Cpu1",
                     "Title": "Intel core i7 6700K 4ghz",
                     "Price":  "424.96",
-                    "Image": "Assets/image/Cpu1.png"
+                    "Image": "Assets/image/Gamer/Cpu1.png"
                 },
                 {
                     "UniqueId": "Cpu2",
                     "Title": "AMD FX 8370E Black Edition 8x3.3ghz",
                     "Price":  "239.95",
-                    "Image": "Assets/image/Cpu2.png"
+                    "Image": "Assets/image/Gamer/Cpu2.png"
                 }
             ],
             "Memory": [
@@ -98,13 +98,13 @@
                     "UniqueId": "Memory1",
                     "Title": "GSkill Trident Z 16go 2x8go DDR4 3866mhz",
                     "Price": "434.95",
-                    "Image": "Assets/image/Memory1.png"
+                    "Image": "Assets/image/Gamer/Memory1.png"
                 },
                 {
                     "UniqueId": "Memory2",
-                    "Title": "Kingstone Hyper X Fury 16go 2x8 DDR3 1333mhz cas 9",
+                    "Title": "Kingston Hyper X Fury 16go 2x8 DDR3 1333mhz cas 9",
                     "Price": "89.95",
-                    "Image": "Assets/image/Memory2.png"
+                    "Image": "Assets/image/GamerMemory2.png"
                 }
             ],
             "Storage": [
@@ -112,13 +112,13 @@
                     "UniqueId": "Storage1",
                     "Title": "SSD Samung 85O EVO 500go",
                     "Price": "164.95",
-                    "Image": "Assets/image/Storage1.png"
+                    "Image": "Assets/image/Gamer/Storage1.png"
                 },
                 {
                     "UniqueId": "Storage2",
                     "Title": "Seagate Barracuda 7200.14 Sata 3 2to",
                     "Price":  "82.95",
-                    "Image": "Assets/image/Storage2.png"
+                    "Image": "Assets/image/Gamer/Storage2.png"
                 }
             ]
         }
@@ -132,13 +132,13 @@
                     "UniqueId": "GraphicCard1",
                     "Title": "Nvidia Geforce Quadro k6000 12go",
                     "Price": "5199.90€",
-                    "Image": "Assets/image/GraphicCard1.png"
+                    "Image": "Assets/image/Professionnel/GraphicCard1.png"
                 },
                 {
                     "UniqueId": "GraphicCard2",
                     "Title": "AMD FirePro w9000 6go",
                     "Price" : "3428.99€",  
-                    "Image": "Assets/image/GraphicCard2.png"
+                    "Image": "Assets/image/Professionnel/GraphicCard2.png"
                 }
             ],
             "Cpu": [
@@ -146,13 +146,13 @@
                     "UniqueId": "Cpu1",
                     "Title": "Intel Xeon e52660v3 10x2.5ghz",
                     "Price": "1679.9€",  
-                    "Image": "Assets/image/Cpu1.png"
+                    "Image": "Assets/image/Professionnel/Cpu1.png"
                 },
                 {
                     "UniqueId": "Cpu2",
                     "Title": "AMD Opteron 6370P 16x2ghz",
                     "Price":  "789.84€",
-                    "Image": "Assets/image/Cpu2.png"
+                    "Image": "Assets/image/Professionnel/Cpu2.png"
                 }
             ],
             "Memory": [
@@ -160,13 +160,13 @@
                     "UniqueId": "Memory1",
                     "Title": "Corsair Dominator Platnium 128go 8x16 DDR4 2800mhz cas 14",
                     "Price": "1512.84€",
-                    "Image": "Assets/image/Memory1.png"
+                    "Image": "Assets/image/Professionnel/Memory1.png"
                 },
                 {
                     "UniqueId": "Memory2",
                     "Title": "GSkill Trident X Series 8go 2x4 DDR3 3100mhz cas 12",
                     "Price": "879.75",
-                    "Image": "Assets/image/Memory2.png"
+                    "Image": "Assets/image/Professionnel/Memory2.png"
                 }
             ],
             "Storage": [
@@ -174,13 +174,13 @@
                     "UniqueId": "Storage1",
                     "Title": "SSD Intel 750 series 1.2to" ,
                     "Price": "1299.90€",
-                    "Image": "Assets/image/Storage1.png"
+                    "Image": "Assets/image/Professionnel/Storage1.png"
                 },
                 {
                     "UniqueId": "Storage2",
                     "Title": "HDD HGST Deskstar 7k4000 sata3 4to",
                     "Price":  "259.99€",
-                    "Image": "Assets/image/Storage2.png"
+                    "Image": "Assets/image/Professionnel/Storage2.png"
                 }
             ]
         }

@@ -28,30 +28,30 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Cpu1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Cpu2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\image\GraphicCard1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\image\GraphicCard2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Memory1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Memory2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\image\storage1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\image\storage2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Bureau\Cpu1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Bureau\Cpu2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Bureau\GraphicCard1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Bureau\GraphicCard2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Bureau\Memory1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Bureau\Memory2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Bureau\Storage1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Bureau\Storage2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Gamer\Cpu1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Gamer\Cpu2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Gamer\GraphicCard1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Gamer\GraphicCard2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Gamer\Memory1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Gamer\Memory2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Gamer\Storage1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Gamer\Storage2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Professionnel\Cpu1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Professionnel\Cpu2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Professionnel\GraphicCard1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Professionnel\GraphicCard2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Professionnel\Memory1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Professionnel\Memory2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Professionnel\Storage1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\image\Professionnel\Storage2.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\screen.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
