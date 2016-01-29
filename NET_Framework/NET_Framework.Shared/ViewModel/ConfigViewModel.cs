@@ -4,10 +4,6 @@ using NET_Framework.Model;
 using Nito.AsyncEx;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using System.Linq;
-using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
 
 namespace NET_Framework.ViewModel

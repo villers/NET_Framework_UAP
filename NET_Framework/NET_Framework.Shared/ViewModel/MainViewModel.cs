@@ -1,11 +1,7 @@
-using System;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
 using NET_Framework.Model;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Windows.Storage;
 using Microsoft.Practices.ServiceLocation;
 
 namespace NET_Framework.ViewModel
