@@ -13,16 +13,36 @@
     <ScrollViewer>
         <StackPanel Grid.Row="0" Margin="10,0,10,0">
             <TextBlock Text="PConfig" Style="{StaticResource HeaderTextBlockStyle}" />
-            <TextBlock Text="Show Card" Style="{StaticResource BaseTextBlockStyle}"/>
+            <TextBlock Text="Show Cart" Style="{StaticResource BaseTextBlockStyle}"/>
 
-            <Button Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
-                <Button.Content>
-                    <StackPanel>
-                        <TextBlock Text="{Binding ComponentSelected.Graphic.Title}"/>
-                        <Image Source="{Binding ComponentSelected.Graphic.Image}" />
-                    </StackPanel>
-                </Button.Content>
-            </Button>
+            <StackPanel Margin="10,0,10,10">
+                <TextBlock Text="{Binding ComponentSelected.Graphic.Title}" Style="{StaticResource ListViewItemSubheaderTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentSelected.Graphic.Price}" Style="{StaticResource ListViewItemContentTextBlockStyle}"/>
+                <Border BorderBrush="LightGray" BorderThickness="2">
+                    <Image Source="{Binding ComponentSelected.Graphic.Image}" />
+                </Border>
+            </StackPanel>
+            <StackPanel Margin="10,0,10,10">
+                <TextBlock Text="{Binding ComponentSelected.Cpu.Title}" Style="{StaticResource ListViewItemSubheaderTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentSelected.Cpu.Price}" Style="{StaticResource ListViewItemContentTextBlockStyle}"/>
+                <Border BorderBrush="LightGray" BorderThickness="2">
+                    <Image Source="{Binding ComponentSelected.Cpu.Image}" />
+                </Border>
+            </StackPanel>
+            <StackPanel Margin="10,0,10,10">
+                <TextBlock Text="{Binding ComponentSelected.Memory.Title}" Style="{StaticResource ListViewItemSubheaderTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentSelected.Memory.Price}" Style="{StaticResource ListViewItemContentTextBlockStyle}"/>
+                <Border BorderBrush="LightGray" BorderThickness="2">
+                    <Image Source="{Binding ComponentSelected.Memory.Image}" />
+                </Border>
+            </StackPanel>
+            <StackPanel Margin="10,0,10,10">
+                <TextBlock Text="{Binding ComponentSelected.Storage.Title}" Style="{StaticResource ListViewItemSubheaderTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentSelected.Storage.Price}" Style="{StaticResource ListViewItemContentTextBlockStyle}"/>
+                <Border BorderBrush="LightGray" BorderThickness="2">
+                    <Image Source="{Binding ComponentSelected.Storage.Image}" />
+                </Border>
+            </StackPanel>
         </StackPanel>
     </ScrollViewer>
 </Page>

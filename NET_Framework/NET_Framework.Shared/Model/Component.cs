@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-
-namespace NET_Framework.Model
+﻿namespace NET_Framework.Model
 {
     public class Component
     {

@@ -9,10 +9,40 @@
     DataContext="{Binding Card, Source={StaticResource Locator}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+
+    <ScrollViewer>
         <StackPanel Grid.Row="0" Margin="10,0,10,0">
             <TextBlock Text="PConfig" Style="{StaticResource HeaderTextBlockStyle}" />
-            <TextBlock Text="Show Card" Style="{StaticResource BaseTextBlockStyle}"/>
+            <TextBlock Text="Show Cart" Style="{StaticResource BaseTextBlockStyle}"/>
+
+            <StackPanel Margin="10,0,10,10">
+                <TextBlock Text="{Binding ComponentSelected.Graphic.Title}" Style="{StaticResource SubheaderTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentSelected.Graphic.Price}" Style="{StaticResource BodyTextBlockStyle}"/>
+                <Border BorderBrush="LightGray" BorderThickness="2">
+                    <Image Source="{Binding ComponentSelected.Graphic.Image}" />
+                </Border>
+            </StackPanel>
+            <StackPanel Margin="10,0,10,10">
+                <TextBlock Text="{Binding ComponentSelected.Cpu.Title}" Style="{StaticResource SubheaderTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentSelected.Cpu.Price}" Style="{StaticResource BodyTextBlockStyle}"/>
+                <Border BorderBrush="LightGray" BorderThickness="2">
+                    <Image Source="{Binding ComponentSelected.Cpu.Image}" />
+                </Border>
+            </StackPanel>
+            <StackPanel Margin="10,0,10,10">
+                <TextBlock Text="{Binding ComponentSelected.Memory.Title}" Style="{StaticResource SubheaderTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentSelected.Memory.Price}" Style="{StaticResource BodyTextBlockStyle}"/>
+                <Border BorderBrush="LightGray" BorderThickness="2">
+                    <Image Source="{Binding ComponentSelected.Memory.Image}" />
+                </Border>
+            </StackPanel>
+            <StackPanel Margin="10,0,10,10">
+                <TextBlock Text="{Binding ComponentSelected.Storage.Title}" Style="{StaticResource SubheaderTextBlockStyle}"/>
+                <TextBlock Text="{Binding ComponentSelected.Storage.Price}" Style="{StaticResource BodyTextBlockStyle}"/>
+                <Border BorderBrush="LightGray" BorderThickness="2">
+                    <Image Source="{Binding ComponentSelected.Storage.Image}" />
+                </Border>
+            </StackPanel>
         </StackPanel>
-    </Grid>
+    </ScrollViewer>
 </Page>

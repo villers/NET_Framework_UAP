@@ -18,9 +18,23 @@ namespace NET_Framework.ViewModel
 
         public ComponentSelected ComponentSelected { get; set; }
 
-        public RelayCommand SelectedItemListView { get; set; }
+        private ComponentsKey _selectedFeedItem;
+        public ComponentsKey SelectedFeedItem //Valeur du mot sélectionné dans la liste
+        {
+            get
+            {
+                return _selectedFeedItem;
+            }
 
-        public ComponentsKey ComponentsKey { get; set; }
+            set
+            {
+                if (_selectedFeedItem != value)
+                {
+                    _selectedFeedItem = value;
+                    SetComponentSelectedAndComponentType();
+                }
+            }
+        }
 
         public string ConfigID { get; set; }
 
@@ -76,38 +90,37 @@ namespace NET_Framework.ViewModel
         {
             Navigation = navigation;
             ComputersData = computersData;
-            SelectedItemListView = new RelayCommand(do_SelectedItemListView);
             ComponentSelected = new ComponentSelected();
         }
 
-        private void do_SelectedItemListView()
+        private void SetComponentSelectedAndComponentType()
         {
             switch (ComponentType)
             {
                 case ComponentType.Graphic:
                     {
-                        ComponentSelected.Graphic = ComponentsKey;
+                        ComponentSelected.Graphic = SelectedFeedItem;
                         ComponentType = ComponentType.Cpu;
                         break;
                     }
 
                 case ComponentType.Cpu:
                     {
-                        ComponentSelected.Cpu = ComponentsKey;
+                        ComponentSelected.Cpu = SelectedFeedItem;
                         ComponentType = ComponentType.Memory;
                         break;
                     }
 
                 case ComponentType.Memory:
                     {
-                        ComponentSelected.Memory = ComponentsKey;
+                        ComponentSelected.Memory = SelectedFeedItem;
                         ComponentType = ComponentType.Storage;
                         break;
                     }
 
                 case ComponentType.Storage:
                     {
-                        ComponentSelected.Storage = ComponentsKey;
+                        ComponentSelected.Storage = SelectedFeedItem;
                         Navigation.NavigateTo(ViewModelLocator.CardPageKey);
                         return;
                     }

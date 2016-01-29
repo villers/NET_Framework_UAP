@@ -1,4 +1,7 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using GalaSoft.MvvmLight.Views;
+using Microsoft.Practices.ServiceLocation;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
 // Pour en savoir plus sur le modèle d’élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkID=390556
@@ -22,6 +25,15 @@ namespace NET_Framework
         /// Ce paramètre est généralement utilisé pour configurer la page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private void HardwareButtons_BackPressed()
+        {
+            Frame frame = Window.Current.Content as Frame;
+            if (frame.CanGoBack)
+            {
+                ServiceLocator.Current.GetInstance<INavigationService>().GoBack();
+            }
         }
     }
 }

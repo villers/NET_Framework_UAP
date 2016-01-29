@@ -25,17 +25,18 @@
             </StackPanel>
 
             <!--ContentPanel-->
-            <ListView Grid.Row="1" IsItemClickEnabled="True" ItemsSource="{Binding ComponentsItems.Result}" SelectedItem="{Binding ComponentsKey, Mode=TwoWay}">
+            <ListView Grid.Row="1"
+                      ItemsSource="{Binding Path=ComponentsItems.Result}"
+                      SelectedItem="{Binding Path=SelectedFeedItem, Mode=TwoWay}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Button Margin="0" Command="{Binding Config.SelectedItemListView, Source={StaticResource Locator}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="0">
-                            <Button.Content>
-                                <StackPanel>
-                                    <TextBlock Text="{Binding Title}"/>
-                                    <Image Source="{Binding Image}" />
-                                </StackPanel>
-                            </Button.Content>
-                        </Button>
+                        <StackPanel Margin="10,0,10,10">
+                            <TextBlock Text="{Binding Title}" Style="{StaticResource ListViewItemSubheaderTextBlockStyle}"/>
+                            <TextBlock Text="{Binding Price}" Style="{StaticResource ListViewItemContentTextBlockStyle}"/>
+                            <Border BorderBrush="LightGray" BorderThickness="2">
+                                <Image Source="{Binding Image}" />
+                            </Border>
+                        </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
