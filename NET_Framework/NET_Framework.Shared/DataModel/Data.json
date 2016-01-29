@@ -22,13 +22,13 @@
                     "UniqueId": "Cpu1",
                     "Title": "AMD Athlon 5150 4x1.6ghz",
                     "Price": "40.00",
-                    "Image": "Assets/image/Bureau/Cpu1.png"
+                    "Image": "Assets/image/Bureau/Cpu2.png"
                 },
                 {
                     "UniqueId": "Cpu2",
                     "Title": "Intel pentium G3240 2x3.1ghz",
                     "Price": "59.75",
-                    "Image": "Assets/image/Bureau/Cpu2.png"
+                    "Image": "Assets/image/Bureau/Cpu1.png"
                 }
             ],
             "Memory": [
