@@ -131,13 +131,13 @@
                 {
                     "UniqueId": "GraphicCard1",
                     "Title": "Nvidia Geforce Quadro k6000 12go",
-                    "Price": "5199.90€",
+                    "Price": "5199.90",
                     "Image": "Assets/image/Professionnel/GraphicCard1.png"
                 },
                 {
                     "UniqueId": "GraphicCard2",
                     "Title": "AMD FirePro w9000 6go",
-                    "Price" : "3428.99€",  
+                    "Price" : "3428.90",  
                     "Image": "Assets/image/Professionnel/GraphicCard2.png"
                 }
             ],
@@ -145,13 +145,13 @@
                 {
                     "UniqueId": "Cpu1",
                     "Title": "Intel Xeon e52660v3 10x2.5ghz",
-                    "Price": "1679.9€",  
+                    "Price": "1679.9",  
                     "Image": "Assets/image/Professionnel/Cpu1.png"
                 },
                 {
                     "UniqueId": "Cpu2",
                     "Title": "AMD Opteron 6370P 16x2ghz",
-                    "Price":  "789.84€",
+                    "Price":  "789.84",
                     "Image": "Assets/image/Professionnel/Cpu2.png"
                 }
             ],
@@ -159,7 +159,7 @@
                 {
                     "UniqueId": "Memory1",
                     "Title": "Corsair Dominator Platnium 128go 8x16 DDR4 2800mhz cas 14",
-                    "Price": "1512.84€",
+                    "Price": "1512.84",
                     "Image": "Assets/image/Professionnel/Memory1.png"
                 },
                 {
@@ -173,13 +173,13 @@
                 {
                     "UniqueId": "Storage1",
                     "Title": "SSD Intel 750 series 1.2to" ,
-                    "Price": "1299.90€",
+                    "Price": "1299.90",
                     "Image": "Assets/image/Professionnel/Storage1.png"
                 },
                 {
                     "UniqueId": "Storage2",
                     "Title": "HDD HGST Deskstar 7k4000 sata3 4to",
-                    "Price":  "259.99€",
+                    "Price":  "259.99",
                     "Image": "Assets/image/Professionnel/Storage2.png"
                 }
             ]
